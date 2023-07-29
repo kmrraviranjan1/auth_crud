@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend of authentication-crud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "migration": "npx sequelize-cli db:migrate"
+  },
+  "author": "Ravi Ranjan Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/morgan": "^1.9.4",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "pm2": "^5.3.0",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.16.20",
+    "sequelize-cli": "^6.5.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
